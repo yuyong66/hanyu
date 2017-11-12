@@ -1,0 +1,30 @@
+<templateSet group="PHP">
+  <template name="forek" value="foreach ($ITERABLE$ as $VAR_KEY$ =&gt; $VAR_VALUE$) {&#10;    $END$&#10;}" description="foreach(iterable_expr as $key =&gt; $value) {...}" toReformat="true" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_KEY" expression="phpSuggestVariableName()" defaultValue="&quot;$key&quot;" alwaysStopAt="true" />
+    <variable name="VAR_VALUE" expression="phpSuggestVariableName()" defaultValue="&quot;$value&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="&lt;?" value="&lt;?php echo &quot;$NAME$&quot; ?&gt;" description="Html引入&lt;php echo ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSON" value="true" />
+      <option name="PHP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tnotes" value="/**&#10; * Date: $DATE$&#10; * Time: $TIME$&#10; * Url : $URL$&#10; * Auth: 执笔画卿颜 丶 &lt;365919529@qq.com&gt;&#10; */" description="头部注释" toReformat="false" toShortenFQNames="true">
+    <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TIME" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="URL" expression="phpVar" defaultValue="&quot;http://www.llggo.com&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="try" value="try {&#10;    &#10;} catch (PDOException $e) {&#10;    &#10;}" description="抛出异常" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
