@@ -3,6 +3,7 @@
     <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR_KEY" expression="phpSuggestVariableName()" defaultValue="&quot;$key&quot;" alwaysStopAt="true" />
     <variable name="VAR_VALUE" expression="phpSuggestVariableName()" defaultValue="&quot;$value&quot;" alwaysStopAt="true" />
+    <context />
   </template>
   <template name="&lt;?" value="&lt;?php echo &quot;$NAME$&quot; ?&gt;" description="Html引入&lt;php echo ?&gt;" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
